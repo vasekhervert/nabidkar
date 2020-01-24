@@ -1,5 +1,5 @@
 import React from "react";
-import { Column } from "@bit/digiaonline.react-foundation.grid";
+import { Column } from "../components/Grid";
 
 export default function Select({ value, choices, columns, name, idx }) {
   function changeValue(e) {

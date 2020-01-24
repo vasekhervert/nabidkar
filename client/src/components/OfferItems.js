@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Column } from "@bit/digiaonline.react-foundation.grid";
+import { Row, Column } from "../components/Grid";
 import OfferItem from "./OfferItem";
 import Button from "./Button";
 import TotalPrice from "./TotalPrice";
@@ -55,7 +55,7 @@ export default function OfferItems() {
   return (
     <Column large={12}>
       <div className="panel">
-        <Row className="table-head">
+        <Row classes="table-head">
           <Column large={4}>Název položky</Column>
           <Column large={1}>Množství</Column>
           <Column large={1}>Cena ks</Column>

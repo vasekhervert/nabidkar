@@ -1,5 +1,5 @@
 import React from "react";
-import { Column } from "@bit/digiaonline.react-foundation.grid";
+import { Row, Column } from "../components/Grid";
 
 export default function ItemOutput({ value, columns }) {
   const val = Number(value).toFixed(2);

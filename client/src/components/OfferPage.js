@@ -4,24 +4,24 @@ import OfferHead from "./OfferHead";
 import OfferParties from "./OfferParties";
 import OfferItems from "./OfferItems";
 import Input from "./Input";
-import { Row, Column } from "@bit/digiaonline.react-foundation.grid";
+import { Row, Column } from "../components/Grid";
 import OfferActions from "./OfferActions";
 
 export default function OfferPage() {
   return (
     <OfferContextProvider>
       <div className="content-wrap">
-        <Row className="m1">
+        <Row classes="m1">
           <OfferHead />
         </Row>
-        <Row className="m1">
+        <Row classes="m1">
           <OfferParties />
         </Row>
-        <Row className="m1">
+        <Row classes="m1">
           <OfferItems />
         </Row>
 
-        <Row className="m1">
+        <Row classes="m1">
           <Column large={12}>
             <div className="panel">
               <Row>
@@ -39,7 +39,7 @@ export default function OfferPage() {
             </div>
           </Column>
         </Row>
-        <Row className="m1">
+        <Row classes="m1">
           <OfferActions />
         </Row>
       </div>

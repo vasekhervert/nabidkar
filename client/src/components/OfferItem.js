@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Row } from "@bit/digiaonline.react-foundation.grid";
+import { Row, Column } from "../components/Grid";
 import ItemInput from "./ItemInput";
 import ItemOutput from "./ItemOutput";
 import { FaTrashAlt } from "react-icons/fa";
@@ -52,7 +52,7 @@ export default function OfferItem({ item, items, idx, setItems }) {
   }
 
   return (
-    <Row className="offer-item">
+    <Row classes="offer-item">
       {idx !== 0 ? (
         <div
           className="delete-item"

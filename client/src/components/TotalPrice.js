@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Column } from "@bit/digiaonline.react-foundation.grid";
+import { Row, Column } from "../components/Grid";
 import { useOfferValue } from "../contexts";
 
 export default function TotalPrice({ items }) {

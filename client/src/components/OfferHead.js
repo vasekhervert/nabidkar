@@ -1,7 +1,7 @@
 import React from "react";
 
 import Input from "./Input";
-import { Row, Column } from "@bit/digiaonline.react-foundation.grid";
+import { Row, Column } from "../components/Grid";
 import DragDrop from "./DragDrop";
 
 export default function OfferHead() {
