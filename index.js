@@ -14,7 +14,7 @@ let allowCrossDomain = function(req, res, next) {
 };
 app.use(allowCrossDomain);
 app.use(bodyParser.json());
-app.use(express.static("offers"));
+app.use(express.static(__dirname + "/offers"));
 
 app.post("/create-pdf", async (req, res) => {
   const data = req.body;
