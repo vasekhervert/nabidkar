@@ -14,10 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.610.0",
     "body-parser": "^1.19.0",
     "concurrently": "^5.0.2",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2",
-    "pdf-creator-node": "^1.4.0"
+    "handlebars": "^4.7.2",
+    "html-pdf": "^2.2.0",
+    "nodemon": "^2.0.2"
   }
 }
