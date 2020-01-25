@@ -29,7 +29,7 @@ export default function OfferActions() {
       offerStatus: "creating"
     }));
 
-    createPdf("http://localhost:5000/create-pdf", offerValue)
+    createPdf("/create-pdf", offerValue)
       .then(response => {
         setOfferValue(prevState => ({
           ...prevState,
