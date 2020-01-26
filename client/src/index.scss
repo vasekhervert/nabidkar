@@ -23,7 +23,7 @@ span {
     text-decoration: underline;
     font-size: 0.9rem;
     cursor: pointer;
-    &:right {
+    &.right {
       text-align: right;
     }
     &.center {

@@ -68,8 +68,8 @@ export default function OfferActions() {
             <div className="offer-create">
               <FaCheckCircle />
               <p>Vaše nabídka je připravena.</p>
-              <a href={offerValue.offerLink} className="button primary">
-                Stáhnout nabídku<span>(.pdf)</span>
+              <a href={offerValue.offerLink} className="button success">
+                Stáhnout nabídku<span> (.pdf)</span>
               </a>
               <span className="link center" onClick={() => closeModal()}>
                 Zavřít
