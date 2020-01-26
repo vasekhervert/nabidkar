@@ -50,8 +50,8 @@ app.post("/create-pdf", async (req, res) => {
   const filename = `nabidka.pdf`;
 
   const options = {
-    format: "A4",
-    orientation: "portrait",
+    height: "297mm",
+    width: "210mm",
     border: "8mm",
     footer: {
       height: "16mm",
