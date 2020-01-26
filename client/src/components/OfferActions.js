@@ -55,7 +55,7 @@ export default function OfferActions() {
   return (
     <div>
       <Button classes="success centered" action={() => createOutput()}>
-        Vytvořit PDF
+        Vygenerovat PDF
       </Button>
       {offerValue.offerStatus !== "filling" ? (
         <Modal styles={offerValue.offerStatus} closeAction={() => closeModal()}>
