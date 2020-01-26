@@ -26,10 +26,10 @@ export default function OfferPage() {
           <Column large={12}>
             <div className="panel">
               <Row>
-                <Column large={4}>
+                <Column large={3}>
                   <Input label="Vystavil" type="text" id="offerAuthor" />
                 </Column>
-                <Column large={8}>
+                <Column large={9}>
                   <Input
                     label="Text v patičce nabídky"
                     type="text"

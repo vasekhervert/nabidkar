@@ -64,14 +64,6 @@ export default function OfferSubject({ subjectName, subjectPrefix }) {
             </Column>
           </Row>
           <Row>
-            <Column large={6}>
-              <Input label="IČ" type="text" id={`${subjectPrefix}Ico`} />
-            </Column>
-            <Column large={6}>
-              <Input label="DIČ" type="text" id={`${subjectPrefix}Dic`} />
-            </Column>
-          </Row>
-          <Row>
             <Column large={12}>
               <Input
                 label="Ulice a č.p."
@@ -86,6 +78,14 @@ export default function OfferSubject({ subjectName, subjectPrefix }) {
             </Column>
             <Column large={6}>
               <Input label="PSČ" type="text" id={`${subjectPrefix}Postcode`} />
+            </Column>
+          </Row>
+          <Row>
+            <Column large={6}>
+              <Input label="IČ" type="text" id={`${subjectPrefix}Ico`} />
+            </Column>
+            <Column large={6}>
+              <Input label="DIČ" type="text" id={`${subjectPrefix}Dic`} />
             </Column>
           </Row>
           <Row>
