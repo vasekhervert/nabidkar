@@ -19,7 +19,7 @@ export default function OfferHead() {
             <Input label="Datum vystavení" type="date" id="offerDate" />
           </Column>
           <Column large={4}>
-            <Input label="Platná do" type="date" id="offerValitTill" />
+            <Input label="Platná do" type="date" id="offerValidTill" />
           </Column>
         </Row>
       </Column>

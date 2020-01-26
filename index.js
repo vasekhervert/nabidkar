@@ -58,7 +58,9 @@ app.post("/create-pdf", async (req, res) => {
       contents: {
         default: `<p style='font-family: "Roboto", sans-serif!important; text-align: center;border-top: 1px solid #adadad; font-size: 12px; line-height: 32px;'>${data.offerFooter}</p>`
       }
-    }
+    },
+    zoomFactor: "1",
+    type: "pdf"
   };
 
   try {
