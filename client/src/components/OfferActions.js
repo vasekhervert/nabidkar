@@ -54,29 +54,29 @@ export default function OfferActions() {
   };
   return (
     <div>
-      <Button classes="primary centered" action={() => createOutput()}>
+      <Button classes="success centered" action={() => createOutput()}>
         Vytvořit PDF
       </Button>
       {offerValue.offerStatus !== "filling" ? (
         <Modal styles={offerValue.offerStatus} closeAction={() => closeModal()}>
           {offerValue.offerStatus === "creating" ? (
-            <div>
+            <div className="offer-create">
               <FaSpinner />
               <p>Vaše nabídka se připravuje...</p>
             </div>
           ) : offerValue.offerStatus === "done" ? (
-            <div>
+            <div className="offer-create">
               <FaCheckCircle />
               <p>Vaše nabídka je připravena.</p>
               <a href={offerValue.offerLink} className="button primary">
                 Stáhnout nabídku<span>(.pdf)</span>
               </a>
-              <span className="link" onClick={() => closeModal()}>
+              <span className="link center" onClick={() => closeModal()}>
                 Zavřít
               </span>
             </div>
           ) : (
-            <div>
+            <div className="offer-create">
               <FaTimesCircle />
               <p>Něco se pokazilo. Zkuste to prosím znovu.</p>
               <span className="link" onClick={() => closeModal()}>

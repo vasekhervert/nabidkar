@@ -1,7 +1,7 @@
 import React from "react";
 import { OfferContextProvider } from "../contexts";
 import OfferHead from "./OfferHead";
-import OfferParties from "./OfferParties";
+import OfferSubject from "./OfferSubject";
 import OfferItems from "./OfferItems";
 import Input from "./Input";
 import { Row, Column } from "../components/Grid";
@@ -15,7 +15,8 @@ export default function OfferPage() {
           <OfferHead />
         </Row>
         <Row classes="m1">
-          <OfferParties />
+          <OfferSubject subjectName="Dodavatel" subjectPrefix="seller" />
+          <OfferSubject subjectName="Odběratel" subjectPrefix="buyer" />
         </Row>
         <Row classes="m1">
           <OfferItems />
