@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #e5e5e5;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -19,33 +20,33 @@ h1 {
 span {
   &.link {
     display: block;
-    text-align: center;
     text-decoration: underline;
     font-size: 0.9rem;
     cursor: pointer;
+    &:right {
+      text-align: right;
+    }
+    &.center {
+      text-align: center;
+    }
   }
 }
 
 button,
 .button {
-  background-color: transparent;
-  padding: 1rem 1.5rem;
+  background-color: #14aaf5;
+  color: white;
+  padding: 9px;
   border: none;
-  border-radius: 0.5rem;
-  font-weight: 700;
+  border-radius: 4px;
+  font-weight: 400;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s;
-  font-size: 1rem;
+  font-size: 13px;
   cursor: pointer;
-  &.primary {
-    background-color: #2759df;
-    color: white;
-    &:hover {
-      background-color: darken(#2759df, 10%);
-    }
-  }
+
   &.success {
-    background-color: #28a745;
+    background-color: #69c63e;
     color: white;
   }
   &.cta {
@@ -180,17 +181,11 @@ button,
 
 .panel {
   padding: 16px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
-  &.left {
-    margin-left: 0;
-  }
-  &.right {
-    margin-right: 0;
-  }
+  background-color: white;
 }
 
 .m1 {
-  margin: 16px 0;
+  margin: 32px 0;
 }
 
 .table-head {
@@ -258,30 +253,28 @@ input[type="number"] {
 
 .modal-overlay {
   position: fixed;
-  background-color: rgba(250, 250, 250, 0.75);
+  background-color: rgba(39, 50, 64, 0.6);
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
+  z-index: 1;
   .modal-panel {
-    display: flex;
-    width: 400px;
-    min-height: 400px;
+    display: block;
+    width: 600px;
     height: auto;
     background-color: white;
+    padding: 32px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     border: 1px solid #d2d2d2;
-    align-items: center;
-    justify-content: center;
     p {
       text-align: center;
       font-size: 1.1rem;
       font-weight: 700;
-      padding-bottom: 2rem;
     }
     svg {
       width: 4rem;
@@ -307,6 +300,37 @@ input[type="number"] {
       }
     }
   }
+}
+
+.offer-subject {
+  display: flex;
+  min-height: 140px;
+  .offer-subject--content {
+    span {
+      display: block;
+      height: 24px;
+      &.mb {
+        margin-bottom: 1rem;
+      }
+    }
+    &.empty {
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+
+.divided {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 1rem 0;
+}
+
+.offer-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes spin {
