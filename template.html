@@ -145,7 +145,9 @@
 
     <table style="width: 100%;">
       <tr style="border-bottom: 1px solid black;">
-        <th style="text-align: left; max-width: 30%">Název položky</th>
+        <th style="text-align: left; max-width: 30%!important">
+          Název položky
+        </th>
         <th style="text-align: center; ">Množství</th>
         <th style="text-align: center;">Cena ks</th>
         <th style="text-align: center;">Sleva</th>
@@ -157,7 +159,9 @@
 
       {{#each offerItems}}
       <tr>
-        <td style="text-align: left; max-width: 30%">{{this.name}}</td>
+        <td style="text-align: left; max-width: 30%!important">
+          {{this.name}}
+        </td>
         <td style="text-align: center;">{{this.count}}</td>
         <td style="text-align: center;">{{this.regularPrice}}</td>
         <td style="text-align: center;">{{this.sale}}{{this.saleType}}</td>
