@@ -75,6 +75,7 @@
       .grid span {
         display: block;
         line-height: 1.5;
+        min-height: 24px;
       }
       .grid span.mb {
         margin-bottom: 1rem;
@@ -144,7 +145,7 @@
 
     <table style="width: 100%;">
       <tr style="border-bottom: 1px solid black;">
-        <th style="text-align: left;">Název položky</th>
+        <th style="text-align: left; max-width: 30%">Název položky</th>
         <th style="text-align: center; ">Množství</th>
         <th style="text-align: center;">Cena ks</th>
         <th style="text-align: center;">Sleva</th>
@@ -156,7 +157,7 @@
 
       {{#each offerItems}}
       <tr>
-        <td style="text-align: left;">{{this.name}}</td>
+        <td style="text-align: left; max-width: 30%">{{this.name}}</td>
         <td style="text-align: center;">{{this.count}}</td>
         <td style="text-align: center;">{{this.regularPrice}}</td>
         <td style="text-align: center;">{{this.sale}}{{this.saleType}}</td>
